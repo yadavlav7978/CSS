@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Manue</title>
+
+    <style>
+        .navbar {
+            border: 2px solid black;
+            background-color: rgb(145, 228, 228);
+            padding: 4px 40px;
+            border-radius: 10px;
+
+        }
+
+        .navbar li {
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: antiquewhite;
+            float: left;
+            list-style: none;
+            /*The "list-style" property in CSS is used to control the appearance of list items, such as bullets or numbers, in HTML lists*/
+            padding: 4px 20px;
+            margin: 4px 40px;
+    
+        }
+
+        .navbar {
+            overflow: auto;
+            /*The "overflow" property in CSS is used to control how content is displayed when it overflows the boundaries of its container*/
+        }
+        .searchbox input{
+            float: right;
+            border-radius: 2px;
+            border-color: rgb(179, 208, 230);
+            height: 20px;
+        }
+
+        .navbar li :hover {
+              color: black;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">contact us</a> </li>
+            </ul>
+
+            <div class="searchbox">
+                    <input type="text" placeholder="Search">
+            </div>
+
+        </nav>
+    </header>
+
+
+</body>
+
+</html>
