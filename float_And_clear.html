@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .item{
+             border: 2px solid rgb(198, 102, 102);
+             background-color: rgb(155, 239, 211);
+             margin: 20px 10px;
+             padding: 10px 30px;
+        }
+        .container{
+            border: 4px solid black;
+            background-color: rgba(185, 220, 155, 0.699);
+            margin: 33px auto; /*This make elemnt in center*/
+            width: 700px;
+        }
+
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+
+        #computer{
+            float: left;
+            width: 45%;
+        }
+
+        #stationary{
+            
+            clear: left;
+            width: 98%;
+        
+        }
+        p,h1{
+            text-align: center;
+        }
+        h1{
+            margin: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+       
+        <h1>WELCOME</h1>
+
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum, dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima commodi inventore accusantium numquam eos nisi, facilis, et nesciunt quas natus maiores assumenda ad quo cum reprehenderit repellat modi optio maxime, fugit suscipit quidem sequi ex necessitatibus error? Iste velit modi ut. Beatae nihil vel libero, possimus sapiente impedit maxime ipsam voluptates quae reprehenderit similique, accusantium facere unde facilis? Cum porro nemo aliquam dolorum cumque error corrupti fugiat necessitatibus omnis vero praesentium alias esse illo, est quasi animi reiciendis architecto doloremque. amet consectetur adipisicing elit. Facere fugit aperiam, animi reprehenderit recusandae deleniti culpa atque voluptatem tempora rem.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit illo adipisci debitis rerum ipsum cupiditate maiores mollitia ea, fugiat iure necessitatibus quidem eos quasi explicabo officiis. lorem 20
+                 Totam esse sed ipsa odio voluptate iste. tempora rem.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3> 
+            <p id="stationarypara" class="para">Lorem ipsum derit repellat a accusantium, doloribus iusto! Saepe velit sed iste maiores rem perferendis, et placeat debitis laborum, aliquid dolore voluptate exercitationem perspiciatis aspernatur qui ex, officiis eos id. Eveniet, odio et id ratione placeat, quasi exercitationem, odit repellat totam officiis tempore tempora consequuntur unde nihil vero earum debitismolestiae veritatis suscipit? sit amet consectetur adipisicing elit. Facere fugit aperiam, animi reprehenderit recusandae deleniti culpa atque voluptatem tempora rem.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
