@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            border: 2px solid black;
+            height: 1000px;
+            background-color: aqua;
+        }
+        .box{
+            display: inline-block;
+            border:2px solid red;
+            width: 20%;
+            height: 200px;
+            margin: 2px;
+            background-color: beige;
+        }
+
+        .temp{
+            margin: 2px;
+            padding-left: 100px;
+            display: inline-block;
+            width: 100%;
+        }
+        #id3{
+            position: relative;
+            top: 50px;
+        }
+
+        #id2{
+            position: absolute;
+            left: 1000px;
+            top: 40px;
+        }
+
+        #id5{
+          
+            position: fixed;
+            right: 10px;
+            bottom: 2px;
+        }
+
+        #id1{
+            position: sticky;
+            top: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--In CSS, the position property is used to specify how an HTML element is positioned on a web page. It is commonly used in conjunction with the top, bottom, left, and right properties, which are used to set the exact location of an element on the page.
+
+The position property can take on several different values:
+
+1. static: This is the default value, and it means that an element is positioned in the normal flow of the document. The top, bottom, left, and right properties have no effect when the position is set to static.
+
+2. relative: This value positions an element relative to its normal position in the document flow. When an element is given a position of relative, the top, bottom, left, and right properties can be used to move it in any direction.
+
+3. absolute: This value positions an element relative to its nearest positioned ancestor, or to the document body if no positioned ancestor exists. When an element is given a position of absolute, the top, bottom, left, and right properties can be used to set its exact position.
+
+4. fixed: This value positions an element relative to the browser window, even if the page is scrolled. When an element is given a position of fixed, the top, bottom, left, and right properties can be used to set its exact position.
+
+5. sticky: This value positions an element relative to its nearest scrolling ancestor, or the document body if no scrolling ancestor exists. When an element is given a position of sticky, it remains in its normal position until the user scrolls past it, at which point it becomes fixed in place.-->
+
+<div class="container">
+    <div class="temp">
+    <div class="box" id="id1">First</div>
+    <div class="box" id="id2">Second</div>
+    <div class="box" id="id3">Third</div>
+    <div class="box" id="id4">Forth</div>
+    <div class="box" id="id5">Fifth</div>
+
+    </div>
+</div>
+
+    
+</body>
+</html>
