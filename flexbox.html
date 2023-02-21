@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        .container {
+
+            border: 2px solid black;
+            background-color: aquamarine;
+            height: 500px;
+ 
+            /* To intialize the container as flex */
+            display: flex;
+
+            /* flex properties for flex container*/
+
+            /*flex-direction: column; */
+            /* item flow column wise by default flow of direction of item is row wise*/
+            /*flex-direction: row-reverse; */
+            /* flow of direction of item strart from reverse of rows*/
+
+           /* justify-content: center; */
+                                             /* The justify-content property is used to position and align items within a container along the main axis of a flex container.
+                                                The justify-content property accepts several values such as:
+
+                                              1. flex-start: This value aligns the items to the start of the container.
+
+                                              2. flex-end: This value aligns the items to the end of the container.
+
+                                              3. center: This value centers the items within the container.
+
+                                             4. space-between: This value distributes the items evenly along the main axis, with the first item at the start and the last item at the end.
+
+                                             5. space-around: This value distributes the items evenly along the main axis, with equal space between the items.
+
+                                             6. space-evenly: This value distributes the items evenly along the main axis, with equal space between the items and at the start and end of the container.
+                                                  */
+
+           /* align-items: center;  */         /* The align-items property in CSS is used to position and align items within a container on the cross axis of a flex container. 
+                                               The align-item property accepts several values such as:
+                                               
+                                               1. stretch: This is the default value, which stretches the items to fill the container.
+
+                                               2. flex-start: This value aligns the items to the start of the container on the cross axis.
+
+                                                3. flex-end: This value aligns the items to the end of the container on the cross axis.
+
+                                                4. center: This value centers the items vertically within the container.
+
+                                                5. baseline: This value aligns the items along their baselines.
+
+                                                             */
+
+            /* flex-wrap: wrap; */                /* The flex-wrap property in CSS is used to control whether flex items should be laid out on a single line or multiple lines in a flex container. It is used to create flexible and responsive layouts.
+
+                                             The flex-wrap property accepts three possible values:
+
+                                            1. nowrap: This is the default value, which means that all flex items are laid out on a single line, even if it overflows the container.
+
+                                            2. wrap: This value allows flex items to wrap onto multiple lines, as needed, to fit within the container.
+
+                                            3. wrap-reverse: This value allows flex items to wrap onto multiple lines, but in reverse order. The last flex item will be the first item on the new line.*/                                             
+
+
+        }
+
+        .item {
+
+            border: 2px solid red;
+            margin: 8px;
+            padding: 5px;
+            height: 200px;
+            width: 200px;
+        }
+
+        #item1{
+
+
+        }
+
+        #item2{
+
+            order: 30;  /* The order property in CSS is used to specify the order in which flex items appear within a flex container. 
+                           The order property accepts a numerical value,
+                           A higher order value item will appear later in the visual order than items with lower order values.
+                            */
+
+        }
+
+        #item3{
+         
+            flex-basis: 300px;   /* it is used to change the size of particular item 
+                                     1. when flex-direction is set to row flex-basis: will control width 
+                                     2. when flex-direction is set to column flex-basis: will control height
+                                                     */
+
+        }
+
+        #item4{
+
+            align-self: self-end;   /* The align-self property in CSS is used to control the alignment of a single flex item within a flex container.
+                                        it takes differnt values such as:
+
+                                        1. self-end
+                                        2. self-start
+                                        3. center
+                                            */
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Forth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+
+</body>
+
+</html>
