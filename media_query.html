@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .box{
+
+            font-size: 50px;
+            border: 2px solid red;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:300px) {
+            #box1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+             
+            #box2{
+                display: block;
+                background-color: beige;
+            }
+
+        }
+
+        @media (min-width:500px) and (max-width:800px){
+             
+             #box3{
+                 display: block;
+                 background-color: rgb(184, 184, 18);
+             }
+ 
+         }
+
+         @media (min-width:800px){
+             
+             #box4{
+                 display: block;
+                 background-color: rgb(173, 15, 15);
+             }
+ 
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box1">This is my first box</div>
+    <div class="box" id="box2">This is my second box</div>
+    <div class="box" id="box3">This is my third box</div>
+    <div class="box" id="box4">This is my forth box</div>
+    
+</body>
+</html>
