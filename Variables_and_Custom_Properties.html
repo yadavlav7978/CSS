@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+
+    <style>
+
+        /*In CSS, variables (also known as custom properties) allow you to define a value once 
+        and reuse it throughout your stylesheet. Variables are defined using the -- prefix and
+         can be assigned any valid CSS value, including other variables.*/
+
+        :root{
+            --primary-color:green;
+            --background-color:rgb(236, 110, 230);
+            --font-size:20px;
+        }
+
+        .container{
+             display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box{
+            border: 2px solid red;
+            padding: 33px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: var(--background-color);
+            box-shadow: 10px 10px var(--primary-color);
+        }
+    
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
