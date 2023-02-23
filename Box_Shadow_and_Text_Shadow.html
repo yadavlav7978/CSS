@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+   
+    <style>
+
+     .container{
+        display: flex;
+
+     }
+
+     .card{
+
+        border: 2px solid rgb(228, 12, 12);
+        margin: 4px 10px;
+        padding: 4px 10px;
+        height: 200px;
+        text-align: center;
+        box-shadow: 4px 4px rgb(19, 191, 53);  /* In CSS, the box-shadow property is used to add a shadow effect to an element.  */
+                                                 /* The syntax for the box-shadow property is: 
+                                                  box-shadow: horizontal offset, vertical offset, blur radius, spread radius, color,;
+                                                 */
+       box-shadow: -4px -4px 3px rgb(19, 191, 53) ;   /* YOu can also pass negative number then my shadow goes up side ,and here i also provide blur radius*/
+       box-shadow: inset 4px 4px 3px rgb(19, 191, 53);  /* you can use inset property to add shadow inside the element*/
+     }
+
+     .card h2{
+        text-shadow: 2px 4px rgb(207, 237, 61); /* In CSS, the text-shadow property is used to add shadows to text. This property allows you to create a shadow behind text */
+     }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>C++ Cource</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure nihil eos ut dolore dolorum ex cum, totam provident expedita doloribus atque fugiat distinctio!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Html Cource</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate harum id enim. Animi dolore sapiente culpa incidunt eius eligendi rem eum quidem sed!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Css Cource</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum cupiditate sit magni. Cum praesentium autem veritatis atque ullam a alias fugit cumque dolorum?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
