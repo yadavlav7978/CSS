@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+
+    <style>
+
+        body{
+            margin: 2px;
+            padding: 0;
+            color: aliceblue;
+            background-color: black;
+           
+        }
+
+        header::before{
+         
+            background: url('https://source.unsplash.com/collection/1065976/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navbar{
+          border-radius: 4px;
+           padding: 4px 50px;
+        }
+
+        .navigation{
+            display: flex;  /* The default layout direction changes to row: The default layout direction for a flex container is row,
+                               which means the flex items are arranged in a single row from left to right. However, you can change the layout direction
+                             to column using the flex-direction property.*/
+            
+        }
+
+        .item{
+            list-style: none;
+            padding: 0px 150px;
+        }
+
+        section{
+            padding: 2px 40px;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        section::before{
+            content: "HELLO!";  /* it insert the content before the div box*/
+        }
+
+        section::after{
+            content: "THIS IS CONTENT AFTER THE DIV BOX";  /* it insert the content After the div box*/
+        }
+        
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Service</li>
+                <li class="item">About</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to Coding world</h1>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam blanditiis laudantium quisquam sit ipsum aliquam quos, nisi explicabo repudiandae voluptas!consectetur adipisicing elit. Minima, facilis assumenda incidunt expedita adipisci inventore hic! Minus tempore natus dicta?</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>
