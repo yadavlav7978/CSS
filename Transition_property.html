@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transitions in CSS</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+
+
+        #box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            width: 250px;
+            height: 250px;
+            background-color: green;
+
+            /* The transition property can be used to transition any CSS property, such as color, background-color, font-size, opacity, transform, and many more 
+           Here are some examples of when you might want to use the transition property:
+
+           1. When the user hovers over a button, you can use a transition to smoothly change the background color, text color, or border color of the button.
+           2. When an element is clicked, you can use a transition to smoothly change the opacity or scale of the element to give feedback to the user.
+             
+           syntax : 
+           
+           selector {
+                transition: property duration timing-function delay;
+                     } 
+             */
+             
+            /* transition-property: background-color;
+            transition-duration: 1s;
+
+            transition-timing-function: ease-in-out; */
+
+            /* if you want to transition all property above property at a time */
+            transition: all 2s ease-in-out 0s;
+        }
+
+        #box:hover{
+
+            /* if you want to transition all written property at a time you can use syntax ( transition: all duration timing-function delay;) */
+
+              background-color: rgb(231, 40, 15);
+              border-radius: 100px;
+              width: 450px;
+              height: 450px;
+              font-size: 50px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="box">
+            This is Box
+        </div>
+    </div>
+
+</body>
+
+</html>
