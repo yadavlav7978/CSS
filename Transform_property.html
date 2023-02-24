@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 600px;
+            background-color: aqua;
+        }
+
+        /* The transform property in CSS is used to apply various types of transformations to an element, such as rotation, scaling, skewing, and translating. 
+          Here are some common values for the transform property:
+
+         1. rotate(angle): Rotates the element by a specified angle (in degrees) around its center point.
+
+         2. scale(x, y): Scales the element in the horizontal and vertical directions by a specified factor.
+          For example, scale(2, 2) doubles the size of the element.
+
+         3. skew(x-angle, y-angle): Skews the element along the x-axis and y-axis by a specified angle.
+          For example, skew(30deg, 0) skews the element 30 degrees along the x-axis.
+
+          4. translate(x, y): Translates (moves) the element in the horizontal and vertical directions by a specified distance. 
+             For example, translate(50px, 20px) moves the element 50 pixels to the right and 20 pixels down.*/
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blanchedalmond;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+           
+            transition: all 1s ease-in-out;   /* transform function worked good with transtion function to get good effect*/
+
+        }
+
+        .box:hover{
+           transform: rotate(360deg);
+           transform: translate(100px,100px);   /*it over write the above write property */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            This is my Box
+        </div>
+    </div>
+
+</body>
+
+</html>
