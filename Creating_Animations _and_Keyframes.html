@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations & Keyframes</title>
+
+    <style>
+        .container {
+            background-color: rgb(18, 211, 79);
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            background-color: brown;
+            width: 150px;
+            height: 150px;
+
+            justify-content: center;   
+            align-items: center;     /* align-items: aligns individual items along the cross-axis of the flex container,
+                                         The align-content: property is used to align multiple rows of flex items along the cross-axis of the flex container. 
+                                         It controls how the flex lines are distributed within the container, when there is extra space in the cross-axis direction.
+                                          It has no effect on single line flex containers. */
+            position: relative;
+            
+            /* The animation property in CSS allows you to create animations on an element. it takes following values: */
+
+            /* 1. animation-name: Specifies the name of the keyframe animation you want to use.
+               2. animation-duration: Specifies how long the animation should take to complete, in seconds or milliseconds.
+               3. animation-timing-function: Specifies the speed curve of the animation.
+               4. animation-delay: Specifies how long to wait before starting the animation, in seconds or milliseconds.
+               5. animation-iteration-count: Specifies how many times the animation should repeat.
+               6. animation-direction: Specifies whether the animation should play forwards, backwards, or alternate.
+               7. animation-fill-mode: Specifies what happens before and after the animation plays.
+               8. animation-play-state: Specifies whether the animation is running or paused.
+
+             synatx : 
+             animation: name duration timing-function delay iteration-count direction fill-mode; */
+             
+            animation-name: lav2;    /* it used to give name to animation*/
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes lav1{  /*The @keyframes rule in CSS is used to define the individual steps or keyframes of an animation. 
+                             It allows you to define how an element should appear at certain points during the animation,*/
+            from {
+                width: 50px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+
+        @keyframes lav2{
+            0%{
+                top: 0px;
+                left: 150px;
+            }
+            25%{
+                top: 150px;
+                left: 150px;
+            }
+            50%{
+                top: 150px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+
+</body>
+
+</html>
