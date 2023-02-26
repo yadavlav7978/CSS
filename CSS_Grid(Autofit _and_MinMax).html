@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Autofit and MinMax</title>
+
+    <style>
+
+        /*Using auto-fit with repeat() is a powerful way to create a responsive grid layout 
+        that adapts to different screen sizes and content.
+        It allows you to define a minimum and maximum size for each grid item, 
+        while also allowing the grid to expand or contract to fit the available space.*/
+        
+        .container {
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /*In the grid-template-columns property, minmax(200px, 1fr) is used to define a range of values for the size of each grid column. 
+             Specifically,  it specifies that each grid column should have a minimum width of 200px and a maximum width of 1fr.
+            The 200px value represents the minimum size that a grid column can be.
+            This means that if there is not enough space on the screen to accommodate a column of 200px width, 
+           the column will shrink */
+
+
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: aquamarine;
+            margin: 3px;
+            padding: 34px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-7</div>
+        <div class="box">Box-8</div>
+        <div class="box">Box-9</div>
+        <div class="box">Box-10</div>
+        <div class="box">Box-11</div>
+        <div class="box">Box-12</div>
+    </div>
+
+</body>
+
+</html>
