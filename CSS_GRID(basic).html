@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*The "grid" property in CSS  is used to define a grid container and its properties, such as the number of rows and columns, 
+         and the placement of grid items. */
+        
+         /*1. The "grid-template-rows" property is used to specify the size of each row in the grid container. 
+         Eg: grid-template-rows: 50px 100px 75px;
+         In this example, the grid container has three rows, with heights of 50 pixels, 100 pixels, and 75 pixels.*/ 
+
+         /*2. The "grid-template-columns" property is used to specify the size of each column in the grid container. 
+         It takes a list of values that represent the width of each column, separated by spaces. 
+         Eg: grid-template-columns: 1fr 2fr 1fr;
+         In this example, the grid container has three columns, with the first and third columns each taking up one fraction unit of the available space,
+          and the second column taking up two fraction units.*/
+
+          /*We can also use the "repeat" function to repeat a pattern of row or column sizes.
+          Eg: grid-template-rows: repeat(3, 50px);
+              grid-template-columns: repeat(4, 1fr);
+            In this example, the grid container has three rows, each with a height of 50 pixels, and four columns, each taking up one fraction unit of the available space.*/
+
+        .container{
+            display: grid;
+
+          /* grid-template-columns: 100px 500px 500px 100px;*/   /*There is 4 grid column with width 100px 500px 500px 100px*/
+           grid-template-columns: 300px auto 300px;  /*In this grid container has 3 column width of first and last column is 300px
+                                                       and width of 2nd column ia auto it means it takes all space remaining*/
+
+            grid-template-columns: repeat(4,200px);  /* Grid container has 4 column each of width 200px */
+            grid-template-rows: repeat(3,200px);  /* Grid container has 3 rows each of width 200px */
+
+            grid-gap: 2rem 10rem;    /*It sets the size of the gap between grid items.
+                                      it is used to create space between rows and columns in a grid.
+                                      Here is the syntax for the gap property:
+                                       grid-gap: <row-gap> <column-gap>;*/
+        }
+
+        .item{
+            display: flex;
+            border: 2px solid red;
+            background-color: rgb(134, 236, 134);
+            margin: 2px;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">This is Box-1</div>
+        <div class="item">This is Box-2</div>
+        <div class="item">This is Box-3</div>
+        <div class="item">This is Box-4</div>
+        <div class="item">This is Box-5</div>
+        <div class="item">This is Box-6</div>
+        <div class="item">This is Box-7</div>
+        <div class="item">This is Box-8</div>
+        <div class="item">This is Box-9</div>
+        <div class="item">This is Box-10</div>
+        <div class="item">This is Box-11</div>
+        <div class="item">This is Box-12</div>
+    </div>
+    
+</body>
+</html>
